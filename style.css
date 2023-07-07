@@ -1,0 +1,210 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: poppins;
+}
+/* Header section */
+header {
+  background-color: #242b2e;
+}
+nav {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  /* margin-top: 5px; */
+  padding: 25px 20px;
+}
+.menu ul {
+  display: flex;
+  justify-content: space-evenly;
+}
+.menu ul li {
+  /* display: flex; */
+  margin-right: 20px;
+  text-decoration: none;
+  list-style: none;
+}
+.menu ul li a {
+  text-decoration: none;
+  color: #fff;
+}
+.logo {
+  height: 30px;
+  width: 60px;
+}
+.menu-icon {
+  display: none;
+}
+.nav-btn {
+  background-color: #0069d9;
+  padding: 10px 20px;
+  cursor: pointer;
+  border-radius: 5px;
+  border: none;
+  color: #fff;
+}
+
+/* Hero section */
+.hero {
+  display: flex;
+}
+.left {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: self-start;
+  margin-left: 2rem;
+}
+.right {
+  width: 50%;
+}
+.left p:first-child {
+  font-size: 2.4rem;
+  margin-bottom: 0.2rem;
+}
+.left p:last-child {
+  color: #0069d9;
+  font-weight: 500;
+}
+.left p:nth-child(2) {
+  font-size: 3.6rem;
+  color: #0069d9;
+  margin-bottom: 0.5rem;
+}
+
+.desc p:first-child {
+  font-size: 16px;
+  width: 75%;
+}
+.bank-img {
+  margin: 1.5rem;
+}
+
+/* Fees section */
+
+.fees-section {
+  background-color: #000000;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  padding: 100px;
+}
+.fees-section h2 {
+  color: #373bbf;
+  font-weight: 600;
+  font-size: 3rem;
+  margin-bottom: 2rem;
+}
+.fees-section h3 {
+  font-size: 1.8rem;
+  font-weight: 500;
+}
+
+/* Footer */
+
+footer {
+  /* width: 100vw; */
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  justify-content: end;
+  align-content: end;
+}
+
+.footer-intro {
+  width: 25%;
+}
+section .footer-nav {
+  width: 25%;
+}
+.support {
+  width: 25%;
+}
+
+/* Responsive */
+@media only screen and (max-width: 1080px) {
+  nav {
+    justify-content: space-between;
+    margin: 5%;
+  }
+
+  .menu {
+    display: none;
+  }
+  .logo {
+    height: 25px;
+    height: 35px;
+  }
+  .menu-icon {
+    display: block;
+    width: 32px;
+    height: 32px;
+    cursor: pointer;
+  }
+  .nav-btn {
+    display: none;
+  }
+  .hero {
+    flex-direction: column-reverse;
+    justify-content: center;
+    align-items: center;
+  }
+  .right {
+    width: 90%;
+  }
+
+  .left {
+    width: 90%;
+  }
+  .bank-img img {
+    width: 250px;
+  }
+
+  .left p:first-child {
+    font-size: 1.7rem;
+    margin-bottom: 0.1rem;
+  }
+  .desc p:first-child {
+    font-size: 14px;
+    width: 85%;
+    margin-bottom: 2rem;
+  }
+  .left p:nth-child(2) {
+    font-size: 2.4rem;
+    color: #0069d9;
+    margin-bottom: 0.5rem;
+  }
+  .left p:last-child {
+    color: #0069d9;
+    font-weight: 500;
+  }
+  video {
+    outline: none;
+    border: none;
+  }
+}
+
+@media only screen and (max-width: 680px) {
+  .fees-section {
+    background-color: aliceblue;
+  }
+
+  .fees-section h2 {
+    color: #373bbf;
+    font-weight: 600;
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    width: 90vw;
+    text-align: center;
+  }
+  .fees-section h3 {
+    font-size: 1rem;
+    font-weight: 500;
+    color: #030303;
+    text-align: center;
+    width: 90vw;
+  }
+}
